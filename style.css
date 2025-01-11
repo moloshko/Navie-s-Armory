@@ -47,6 +47,8 @@ button:hover {
 }
 main {
     display: none;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .button-container {
     display: flex;
@@ -60,4 +62,14 @@ main {
 }
 .right {
     transform: translate(200px , 50px) rotate(30deg);
+}
+.shop-btn {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 30px 55px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #FFEA00, #FF9009);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #7e6034;
 }

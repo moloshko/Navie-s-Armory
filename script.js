@@ -6,6 +6,6 @@ let main = document.querySelector("main")
 start_btn.addEventListener("click", () => {
     header.style.display="none"
     main.style.display="flex"
-    document.querySelector("body").style.backgroundColor="#64A8D1"
-
+    document.querySelector("body").style.backgroundImage="url(./Img/Wallpaper.png)"
+    document.querySelector("body").style.alignItems="flex-start"
 })
