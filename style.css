@@ -66,10 +66,30 @@ main {
 .shop-btn {
     margin-left:0 5px;
     border-radius:100px;
-    padding: 30px 55px;
+    padding: 30px 50px;
     font-size: 30px;
     background: linear-gradient(90deg, #FFEA00, #FF9009);
     font-family: 'Lucida Sans Regular', sans-serif; 
     color: #000000;
     box-shadow: 6px 6px 12px #7e6034;
+}
+.shop-btnreb {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 30px 50px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #8bd478, #ffffff);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #95d182;
+}
+.info-Games {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 30px 50px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #a378d4, #6eb1e7);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #ae82d1;
 }
