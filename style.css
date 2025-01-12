@@ -47,8 +47,9 @@ button:hover {
 }
 main {
     display: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
+    width:100vw
 }
 .button-container {
     display: flex;
@@ -61,22 +62,28 @@ main {
     transform: translate(-200px , 50px) rotate(-30deg);
 }
 .right {
-    transform: translate(200px , 50px) rotate(30deg);
+    transform: translate(200px , 50px) rotate(30deg);  
+}
+.block-right {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    height: 100vh;
 }
 .shop-btn {
     margin-left:0 5px;
     border-radius:100px;
-    padding: 30px 50px;
+    padding: 20px 40px;
     font-size: 30px;
-    background: linear-gradient(90deg, #FFEA00, #FF9009);
+    background: linear-gradient(90deg, #f0e678, #f5ad55);
     font-family: 'Lucida Sans Regular', sans-serif; 
     color: #000000;
     box-shadow: 6px 6px 12px #7e6034;
 }
-.shop-btnreb {
+#reb {
     margin-left:0 5px;
     border-radius:100px;
-    padding: 30px 50px;
+    padding: 20px 40px;
     font-size: 30px;
     background: linear-gradient(90deg, #8bd478, #ffffff);
     font-family: 'Lucida Sans Regular', sans-serif; 
@@ -84,7 +91,7 @@ main {
     box-shadow: 6px 6px 12px #95d182;
 }
 .info-Games {
-    margin-left:0 2.5px;
+    margin-left:0 5px;
     border-radius:100px;
     padding: 30px 50px;
     font-size: 30px;
@@ -92,4 +99,14 @@ main {
     font-family: 'Lucida Sans Regular', sans-serif; 
     color: #000000;
     box-shadow: 6px 6px 12px #ae82d1;
+}
+#sh {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 20px 60px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #ff9100, #fad400);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #7e6034;
 }
