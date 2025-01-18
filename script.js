@@ -36,14 +36,12 @@ btn1.addEventListener("click", () => {
 btn2.addEventListener("click", () => {
     if (weapon_count >= 200) {       
         weapon_count-=200
-        count2+=2 
-        update.innerHTML = "+ 2 "
+        update.innerHTML = + 2 
         weapon.innerHTML = weapon_count
-        count1+=1
     }
     setInterval(()=>{
-     //   weapon_count+=2
-        weapon_count+=count1
+        count2=2
+        weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
 })
