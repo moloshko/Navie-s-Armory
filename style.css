@@ -49,7 +49,9 @@ main {
     display: none;
     justify-content: space-around;
     align-items: flex-start;
-    width:100vw
+    width:100vw;
+    margin-top: 50px;
+    
 }
 .button-container {
     display: flex;
@@ -62,18 +64,22 @@ main {
     transform: translate(-200px , 50px) rotate(-30deg);
 }
 .right {
-    transform: translate(200px , 50px) rotate(30deg);  
+    transform: translate(200px , 50px) rotate(30deg); 
+     
 }
 .block-right {
     display: flex;
     flex-direction: column;
     gap:15px;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
 }
 .shop-btn {
     margin-left:0 5px;
     border-radius:100px;
     padding: 20px 40px;
+    width: 500px;
     font-size: 30px;
     background: linear-gradient(90deg, #f0e678, #f5ad55);
     font-family: 'Lucida Sans Regular', sans-serif; 
@@ -101,9 +107,9 @@ main {
     box-shadow: 6px 6px 12px #ae82d1;
 }
 #sh {
-    margin-left:0 5px;
+    margin:5px;
     border-radius:100px;
-    padding: 20px 60px;
+    padding: 40px 75px;
     font-size: 30px;
     background: linear-gradient(90deg, #ff9100, #fad400);
     font-family: 'Lucida Sans Regular', sans-serif; 
