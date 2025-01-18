@@ -3,10 +3,12 @@ let start_btn = document.querySelector("#start_btn")
 let main = document.querySelector("main")
 let click_img = document.querySelector(".click-img")
 let weapon = document.querySelector(".weapon")
-let weapon_count = 0
+let update = document.querySelector(".update")
+let weapon_count = 200
 let count1 = 1
+let count2 = 0
 let btn1 = document.querySelector(".btn1")
-
+let btn2 = document.querySelector(".btn2")
 // обработка клика на кнопке -- Start --
 start_btn.addEventListener("click", () => {
     header.style.display="none"
@@ -27,7 +29,21 @@ click_img.addEventListener("click", () => {
 })
 btn1.addEventListener("click", () => {
     if (weapon_count >= 100) {
-        count1=2
+        count1+=1
         weapon_count-=100
     }
+})
+btn2.addEventListener("click", () => {
+    if (weapon_count >= 200) {       
+        weapon_count-=200
+        count2+=2 
+        update.innerHTML = "+ 2 "
+        weapon.innerHTML = weapon_count
+        count1+=1
+    }
+    setInterval(()=>{
+     //   weapon_count+=2
+        weapon_count+=count1
+        weapon.innerHTML= weapon_count
+},1000)
 })
