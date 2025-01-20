@@ -7,6 +7,7 @@ let update = document.querySelector(".update")
 let weapon_count = 0
 let count1 = 1
 let count2 = 0
+let count3 = 0
 let btn1 = document.querySelector(".btn1")
 let btn2 = document.querySelector(".btn2")
 let btn3 = document.querySelector(".btn3")
@@ -17,6 +18,7 @@ let btn7 = document.querySelector(".btn7")
 let btn8 = document.querySelector(".btn8")
 let btn9 = document.querySelector(".btn9")
 let btn10 = document.querySelector(".btn10")
+let btn_reb = document.querySelector("#reb")
 // обработка клика на кнопке -- Start --
 start_btn.addEventListener("click", () => {
     header.style.display="none"
@@ -129,4 +131,13 @@ btn10.addEventListener("click", () => {
         weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
+})
+btn_reb.addEventListener("click", () => {
+    if (weapon_count >= 5000) {
+        count1-=count1
+        count2-=count2
+        weapon_count-=5000
+        count3+=1
+        
+    }
 })
