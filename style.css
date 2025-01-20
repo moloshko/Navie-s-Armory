@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Img/WallpaperPlayEnter.png); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family:'Lucida Sans Regular', sans-serif; 
+    text-align: center;
+    color:#FFFF40 ;
+}
+.header_imgNavie {
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 10px;
+    
+}
+header {
+    display:flex ;
+    justify-content: space-between;
+
+}
+.header-img {
+    width: 450px;
+    height: 450px;
+
+}
+button {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 30px 55px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #FFEA00, #FF9009);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #7e6034;
+}
+button:hover {
+    transform: scale(1.10);
+    cursor:grabbing ;
+}
+main {
+    display: none;
+    justify-content: space-around;
+    align-items: flex-start;
+    width:100vw;
+    margin-top: 50px;
+    
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.left {
+    transform: translate(-200px , 50px) rotate(-30deg);
+}
+.right {
+    transform: translate(200px , 50px) rotate(30deg); 
+     
+}
+.block-right {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.shop-btn {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 20px 40px;
+    width: 500px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #f0e678, #f5ad55);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #7e6034;
+}
+#reb {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 20px 40px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #8bd478, #ffffff);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #95d182;
+}
+.info-Games {
+    margin-left:0 5px;
+    border-radius:100px;
+    padding: 30px 50px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #a378d4, #6eb1e7);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #ae82d1;
+}
+#sh {
+    margin:5px;
+    border-radius:100px;
+    padding: 40px 75px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #ff9100, #fad400);
+    font-family: 'Lucida Sans Regular', sans-serif; 
+    color: #000000;
+    box-shadow: 6px 6px 12px #7e6034;
+}
+.click-img img{
+    margin:100px;
+    width: 500px;
+    height: 500px;
+}
