@@ -4,10 +4,12 @@ let main = document.querySelector("main")
 let click_img = document.querySelector(".click-img")
 let weapon = document.querySelector(".weapon")
 let update = document.querySelector(".update")
+let rebirt = document.querySelector(".rebirth")
 let weapon_count = 0
 let count1 = 1
 let count2 = 0
 let count3 = 0
+let multiplier = 0
 let btn1 = document.querySelector(".btn1")
 let btn2 = document.querySelector(".btn2")
 let btn3 = document.querySelector(".btn3")
@@ -134,10 +136,11 @@ btn10.addEventListener("click", () => {
 })
 btn_reb.addEventListener("click", () => {
     if (weapon_count >= 5000) {
+        count2 = 0
         count1-=count1
-        count2-=count2
-        weapon_count-=5000
         count3+=1
-        
+        weapon.innerHTML = count1
+        multiplier+=1    
+        rebirt.innerHTML = multiplier
     }
 })
