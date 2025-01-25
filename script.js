@@ -5,7 +5,7 @@ let click_img = document.querySelector(".click-img")
 let weapon = document.querySelector(".weapon")
 let update = document.querySelector(".update")
 let rebirt = document.querySelector(".rebirth")
-let weapon_count = 5200
+let weapon_count = 15200
 let count1 = 1
 let count2 = 0
 let count3 = 0
@@ -21,6 +21,7 @@ let btn8 = document.querySelector(".btn8")
 let btn9 = document.querySelector(".btn9")
 let btn10 = document.querySelector(".btn10")
 let btn_reb = document.querySelector("#reb")
+let intervals = []
 // обработка клика на кнопке -- Start --
 start_btn.addEventListener("click", () => {
     header.style.display="none"
@@ -50,13 +51,15 @@ btn2.addEventListener("click", () => {
         weapon_count-=200
         update.innerHTML = count2 +2
         weapon.innerHTML = weapon_count
-        
+
     }
-    setInterval(()=>{
+
+    let interval_count = setInterval(()=>{
         count2=2
         weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
+intervals.push(interval_count)
 })
 btn3.addEventListener("click", () => {
     if (weapon_count >= 300) {
@@ -71,11 +74,12 @@ btn4.addEventListener("click", () => {
         weapon.innerHTML = weapon_count
         
     }
-    setInterval(()=>{
+    let interval_count = setInterval(()=>{
         count2=4
         weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
+intervals.push(interval_count)
 })
 btn5.addEventListener("click", () => {
     if (weapon_count >= 500) {
@@ -90,11 +94,12 @@ btn6.addEventListener("click", () => {
         weapon.innerHTML = weapon_count
         
     }
-    setInterval(()=>{
+    let interval_count = setInterval(()=>{
         count2=6
         weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
+intervals.push(interval_count)
 })
 btn7.addEventListener("click", () => {
     if (weapon_count >= 700) {
@@ -109,11 +114,12 @@ btn8.addEventListener("click", () => {
         weapon.innerHTML = weapon_count
         
     }
-    setInterval(()=>{
+    let interval_count = setInterval(()=>{
         count2=8
         weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
+intervals.push(interval_count)
 })
 btn9.addEventListener("click", () => {
     if (weapon_count >= 900) {
@@ -128,11 +134,12 @@ btn10.addEventListener("click", () => {
         weapon.innerHTML = weapon_count
         
     }
-    setInterval(()=>{
+    let interval_count = setInterval(()=>{
         count2=10
         weapon_count+=count2
         weapon.innerHTML= weapon_count
 },1000)
+intervals.push(interval_count)
 })
 btn_reb.addEventListener("click", () => {
     if (weapon_count >= 5000) {
@@ -145,9 +152,11 @@ btn_reb.addEventListener("click", () => {
         rebirt.innerHTML = multiplier
         update.innerHTML = count2
 
-        let buttons = [btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,setInterval]
+        let buttons = [btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10]
         buttons.forEach((btn)=>{
             btn.disabled = false
         })
+        intervals.forEach(clearInterval)
+        intervals = []
     }
 })
