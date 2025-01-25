@@ -76,7 +76,7 @@ main {
     
 }
 .shop-btn {
-    margin-left:0 5px;
+    margin:10px 5px;
     border-radius:100px;
     padding: 20px 40px;
     width: 500px;
@@ -87,7 +87,7 @@ main {
     box-shadow: 6px 6px 12px #7e6034;
 }
 #reb {
-    margin-left:0 5px;
+    margin:0 5px;
     border-radius:100px;
     padding: 20px 40px;
     font-size: 30px;
@@ -107,9 +107,9 @@ main {
     box-shadow: 6px 6px 12px #ae82d1;
 }
 #sh {
-    margin:5px;
+    margin:5x;
     border-radius:100px;
-    padding: 40px 75px;
+    padding: 30px 35px;
     font-size: 30px;
     background: linear-gradient(90deg, #ff9100, #fad400);
     font-family: 'Lucida Sans Regular', sans-serif; 
