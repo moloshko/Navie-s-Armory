@@ -28,6 +28,7 @@ start_btn.addEventListener("click", () => {
     main.style.display="flex"
     document.querySelector("body").style.backgroundImage="url(./Img/Wallpaper.png)"
     document.querySelector("body").style.alignItems="flex-start"
+    document.querySelector("body").style.backgroundSize="cover"
 })
 click_img.addEventListener("click", () => {
     weapon_count+=count1
@@ -160,3 +161,4 @@ btn_reb.addEventListener("click", () => {
         intervals = []
     }
 })
+
